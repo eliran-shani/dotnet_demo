@@ -22,13 +22,6 @@ pipeline {
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'A secret password')
     }
     stages {
-        stage('Parse Build Info') {
-            steps {
-                script {
-                    env.JENKINS_BUILD_INFO = getBuildInfo()
-                }
-            }
-        }
         stage('Deploy') {
             steps {
                 script {
