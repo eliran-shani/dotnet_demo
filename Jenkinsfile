@@ -4,6 +4,10 @@ def checkParameter(param) {
     echo "${param}"
 }
 
+def notify(param) {
+    echo "${param}"
+}
+
 pipeline {
     agent any
     options {
