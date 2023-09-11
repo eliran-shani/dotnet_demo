@@ -1,6 +1,6 @@
 #!groovy
 
-def checkParameter(param) {
+def deploy(param) {
     echo "${param}"
 }
 
